@@ -1,0 +1,27 @@
+/* ***** GLOBAL CSS SETTINGS ***** */
+
+:root {
+    /* ***** Primary Colors ***** */
+    /* Used mostly for the heading and text */
+    --Main-Black: #3E3E3E;
+    /* Mostly for the logo and buttons */
+    --Main-Red: #FD181B;
+
+    /* ***** Secondary Colors ***** */
+    /* Product review stars */
+    --Stars: #FFD700;
+
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+}

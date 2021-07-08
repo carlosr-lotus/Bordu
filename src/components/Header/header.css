@@ -1,0 +1,46 @@
+header {
+    width: 90%;
+    margin: 1.6rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Icon Mobile Only */
+.nav-toggle,
+.icons-header button {
+    background: transparent;
+    border: transparent;
+
+    cursor: pointer;
+}
+
+/* 'Bordu' logo */
+.header-logo {
+    margin-left: 3.2rem;
+}
+
+.icons-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-header button {
+    margin: 0 .2rem;
+}
+
+/* iPads/tables is responsive without needing to change CSS */
+/* Small Laptop is responsive without needing to change CSS */
+
+/* For Desktop */
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .header-logo {
+        margin: 0;
+    }
+}

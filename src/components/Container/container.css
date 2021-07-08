@@ -1,0 +1,27 @@
+/* Mobile Design First */
+#container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* iPads/Tablets */
+@media (min-width: 701px) and (max-width: 1366px) {
+    #container {
+        max-width: 1366px;
+    }
+}
+
+/* Laptops/Small laptops common screen size */
+@media (min-width: 1366px) and (max-width: 1440px) {
+    #container {
+        max-width: 1440px;
+    }
+}
+
+/* Desktop Monitors monitors */
+@media (min-width: 1440px) and (max-width: 2560px) {
+    #container {
+        max-width: 2560px;
+    }
+}
