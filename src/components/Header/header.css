@@ -1,6 +1,6 @@
 header {
     width: 90%;
-    margin: 1.6rem auto;
+    margin: .8rem auto;
 
     display: flex;
     align-items: center;
@@ -8,17 +8,47 @@ header {
 }
 
 /* Navbar Icon Mobile Only */
+/* CSS Presets */
 .nav-toggle,
-.icons-header button {
+.icons-header button,
+.logo-container button:nth-child(3),
+.logo-container button:nth-child(1) {
     background: transparent;
     border: transparent;
 
     cursor: pointer;
 }
 
+/* Mobile Links available only when toggle the hamburguer menu */
+/* Remove the links in the mobile version */
+.btn-header-link,
+.invisible-div {
+    display: none;
+}
+
+/* *** Component CSS *** */
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container p {
+    margin-top: 1.6rem;
+}
+
 /* 'Bordu' logo */
 .header-logo {
-    margin-left: 3.2rem;
+    margin-left: 2rem;
 }
 
 .icons-header {
@@ -40,7 +70,34 @@ header {
         display: none;
     }
 
+    .btn-header-link,
+    .invisible-div {
+        display: block;
+    }
+
+    .logo-container {
+        margin-left: 2.4rem;
+    }
+
+    .logo-container button:nth-child(3),
+    .logo-container button:nth-child(1) {
+        margin: 0 2.3rem;
+        margin-top: 1.2rem;
+
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+
+        color: var(--Main-Black);
+    }
+
+    .logo-container button:nth-child(3):hover,
+    .logo-container button:nth-child(1):hover {
+        color: var(--Main-Red);
+    }
+
     .header-logo {
         margin: 0;
+        margin-left: .5rem;
     }
 }
