@@ -1,18 +1,30 @@
 header {
-    width: 90%;
-    margin: .8rem auto;
+    width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    transition: background-color 350ms linear;
+}
+
+.bg-mobile-menu {
+    position: absolute;
+    z-index: 10;
+
+    height: 100vh;
+    background-color: var(--Mobile-Menu);
+}
+
+.englober-header {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+
+    z-index: -1;
 }
 
 /* Navbar Icon Mobile Only */
-/* CSS Presets */
+/* CSS Presets to change the default button style on the header */
 .nav-toggle,
 .icons-header button,
-.logo-container button:nth-child(3),
-.logo-container button:nth-child(1) {
+.btn-header-link {
     background: transparent;
     border: transparent;
 
@@ -42,6 +54,17 @@ header {
     align-items: center;
 }
 
+.btn-header-link {
+    margin: 0 2.3rem;
+    margin-top: 1.2rem;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+
+    color: var(--Main-Black);
+}
+
 .header-container p {
     margin-top: 1.6rem;
 }
@@ -49,6 +72,7 @@ header {
 /* 'Bordu' logo */
 .header-logo {
     margin-left: 2rem;
+    margin-bottom: .9rem;
 }
 
 .icons-header {
@@ -59,6 +83,26 @@ header {
 
 .icons-header button {
     margin: 0 .2rem;
+}
+
+/* ***** The CSS below is for the mobile header only ***** */
+.mobile-navbar {
+    width: 100%;
+    height: 20%;
+    margin: auto 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile-navbar .btn-header-link {
+    margin: 0;
+    display: block;
+
+    font-size: 1.6rem;
+    color: var(--Logo-Font-White);
 }
 
 /* iPads/tables is responsive without needing to change CSS */
@@ -79,25 +123,17 @@ header {
         margin-left: 2.4rem;
     }
 
-    .logo-container button:nth-child(3),
-    .logo-container button:nth-child(1) {
-        margin: 0 2.3rem;
-        margin-top: 1.2rem;
-
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        letter-spacing: .2rem;
-
-        color: var(--Main-Black);
-    }
-
-    .logo-container button:nth-child(3):hover,
-    .logo-container button:nth-child(1):hover {
+    .btn-header-link:hover {
         color: var(--Main-Red);
     }
 
     .header-logo {
         margin: 0;
         margin-left: .5rem;
+    }
+
+    /* Remove Mobile Navbar from Desktop screensize */
+    .mobile-navbar {
+        display: none;
     }
 }

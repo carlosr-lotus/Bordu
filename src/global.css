@@ -6,16 +6,23 @@
     --Main-Black: #3E3E3E;
     /* Mostly for the logo and buttons */
     --Main-Red: #FD181B;
+    /* Font Logo Color default color */
+    --Logo-Default: #000;
+    /* Font Logo Color when mobile menubar is toggled */
+    --Logo-Font-White: #F0F0F0;
 
     /* ***** Secondary Colors ***** */
     /* Product review stars */
     --Stars: #FFD700;
+    /* Mobile Menu Bar Background Color */
+    --Mobile-Menu: #484848;
 
     /* 1rem = 10px */
     font-size: 62.5%;
 }
 
-* {
+*,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
