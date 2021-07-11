@@ -30,6 +30,7 @@ header {
     margin: 0 auto;
 }
 
+/* CSS Class to 'disable' icons (favorite + cart) when mobile menubar is toggled */
 .disabled {
     position: relative;
     z-index: -1;
