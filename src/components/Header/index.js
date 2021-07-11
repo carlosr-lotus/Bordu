@@ -21,15 +21,21 @@ export default function Header() {
             logoFontColor = 'var(--Logo-Font-White)';
     }
 
+    // Function to change navbar boolean value (TRUE when toggled, FALSE when closed)
     const handleMobileNav = () => {
         setNavbar(!navbar);
     }
 
-    // !!!!! 
-    // CHECK IF MOBILE MENUBAR WORKS PROPERLY
-    // YOU ARE AMAZING! AND YOU WILL FINISH THIS WEBSITE AND BECOME AN AMAZING DEVELOPER
-    // TRUST IN YOURSELF! YOU CAN DO IT!!!
-    // !!!!!
+    /* !!!!! 
+     TASKS TO COMPLETE:
+        1) CREATE NEXT COMPONENT AND IMPLEMENT SLIDERS/CAROUSEL FEATURES
+        2) ADJUST TO BE RESPONSIVE IN DIFFERENT RESOLUTIONS
+        3) CHECK IF THE CAROUSEL/SLIDER WORKS PROPERLY
+
+     * YOU ARE AMAZING! AND YOU WILL FINISH THIS WEBSITE AND BECOME AN AMAZING DEVELOPER
+     * TRUST IN YOURSELF! YOU CAN DO IT!!!
+     !!!!!
+    */
 
     return (
         <header className={navbar ? "bg-mobile-menu" : ""}>
@@ -46,10 +52,11 @@ export default function Header() {
                     {/* Empty div to center logo on Desktop screensizes */}
                     <div className="invisible-div"></div>
 
-                    {/* Logo Container */}
-                    <div className="logo-container">
+                    {/* Logo Container + Desktop Navbar */}
+                    <nav className="logo-container">
                         <button className="btn-header-link">Fragrância</button>
-
+                        
+                        {/* Logo 'Bordu' */}
                         <svg className="header-logo" width="90" height="90" viewBox="0 0 3334 2500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" xmlnsserif="http://www.serif.com/" fillRule="evenodd" clipRule="evenodd" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="1.5">
                         {/* Red Lips + Stroke */}
                         <g id="Logo"><g id="Lips"><path d="M548.97,1005.24c0,0 241.078,-360.192 477.858,-186.857c15.056,11.022 203.827,-310.535 514.861,-22.595c14.169,13.117 -82.906,368.674 -382.613,463.978c-295.903,94.095 -610.106,-254.526 -610.106,-254.526" fill="#ff1919"/><path d="M595.464,1012.98c334.494,3.119 634.968,-61.747 901.062,-188.747" stroke="#000" strokeWidth="3.78px"/></g>
@@ -66,27 +73,27 @@ export default function Header() {
                     </svg>
                     
                         <button className="btn-header-link">Maquiagem</button>
-                    </div>
+                    </nav>
 
                     {/* Cart + Favorites(heart icon) */}
-                    <div className="icons-header">
+                    {/* navbar ? "englober-header disabled" : "englober-header" */}
+                    <div className={navbar ? "icons-header disabled" : "icons-header"}>
                         <button>
-                            <FiHeart size={20}/>
+                            <FiHeart size={20} />
                         </button>
 
                         <button>
-                            {/* Cart Icon */}
-                            <BiCart size={25}/>
+                            <BiCart size={25} />
                         </button>
                     </div>
 
                 </div>
 
-                {/* If Mobile Menu Icon is Toggled, display the html below */}
-                {navbar ? <div className="mobile-navbar">
+                {/* If Mobile Menu Icon is Toggled, display the Mobile Nav below */}
+                {navbar ? <nav className="mobile-navbar">
                     <button className="btn-header-link">Fragrância</button>
                     <button className="btn-header-link">Maquiagem</button>
-                </div>
+                </nav>
                     : ""}
 
             </div>

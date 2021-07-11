@@ -1,9 +1,10 @@
 header {
     width: 100%;
 
-    transition: background-color 350ms linear;
+    transition: background-color 300ms linear;
 }
 
+/* CSS Class only when Mobile Menu is toggled */
 .bg-mobile-menu {
     position: absolute;
     z-index: 10;
@@ -12,16 +13,7 @@ header {
     background-color: var(--Mobile-Menu);
 }
 
-.englober-header {
-    width: 90%;
-    height: 100vh;
-    margin: 0 auto;
-
-    z-index: -1;
-}
-
-/* Navbar Icon Mobile Only */
-/* CSS Presets to change the default button style on the header */
+/* CSS PRESETS to change the default button style on the header */
 .nav-toggle,
 .icons-header button,
 .btn-header-link {
@@ -31,7 +23,18 @@ header {
     cursor: pointer;
 }
 
-/* Mobile Links available only when toggle the hamburguer menu */
+/* *** 1º DIV *** */
+.englober-header {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.disabled {
+    position: relative;
+    z-index: -1;
+}
+
 /* Remove the links in the mobile version */
 .btn-header-link,
 .invisible-div {
@@ -39,6 +42,7 @@ header {
 }
 
 /* *** Component CSS *** */
+/* *** 2º DIV *** */
 .header-container {
     width: 100%;
     margin: 0 auto;
@@ -49,6 +53,7 @@ header {
     justify-content: space-between;
 }
 
+/* *** 3º DIV *** */
 .logo-container {
     display: flex;
     align-items: center;
@@ -65,16 +70,13 @@ header {
     color: var(--Main-Black);
 }
 
-.header-container p {
-    margin-top: 1.6rem;
-}
-
 /* 'Bordu' logo */
 .header-logo {
     margin-left: 2rem;
     margin-bottom: .9rem;
 }
 
+/* *** 4º DIV *** */
 .icons-header {
     display: flex;
     align-items: center;
@@ -87,9 +89,10 @@ header {
 
 /* ***** The CSS below is for the mobile header only ***** */
 .mobile-navbar {
+    margin-top: 1.8rem;
+
     width: 100%;
-    height: 20%;
-    margin: auto 0;
+    height: 15rem;
 
     display: flex;
     flex-direction: column;
