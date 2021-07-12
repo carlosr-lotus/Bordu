@@ -1,0 +1,60 @@
+/* Global Carousel Container */
+.carousel-global-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Carousel Content Container (text + prev/next buttons) */
+.carousel-content-container {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--Logo-Font-White);
+}
+
+.carousel-content-container h1,
+h2 {
+    font-weight: 400;
+    letter-spacing: .1rem;
+
+    font-size: 2.4rem;
+}
+
+.carousel-content-container h2 {
+    font-size: 1.4rem;
+}
+
+/* Carousel Prev/Next Buttons */
+.carousel-btns {
+    width: 23%;
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-btns button {
+    background: transparent;
+    border: transparent;
+
+    cursor: pointer;
+}
+
+/* Carousel Image */
+.carousel-local-container {
+    width: 100%;
+    height: 262px;
+}
+
+.carousel-local-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
