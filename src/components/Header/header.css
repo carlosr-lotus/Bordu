@@ -1,7 +1,6 @@
 header {
     width: 100%;
-
-    transition: background-color 300ms linear;
+    transition: background-color 250ms linear;
 }
 
 /* CSS Class only when Mobile Menu is toggled */
@@ -26,7 +25,6 @@ header {
 /* *** 1º DIV *** */
 .englober-header {
     width: 90%;
-    height: 100vh;
     margin: 0 auto;
 }
 
@@ -34,6 +32,7 @@ header {
 .disabled {
     position: relative;
     z-index: -1;
+    display: none;
 }
 
 /* Remove the links in the mobile version */
@@ -140,4 +139,5 @@ header {
     .mobile-navbar {
         display: none;
     }
+
 }

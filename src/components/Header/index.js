@@ -13,8 +13,7 @@ export default function Header() {
     // This 'let' will handle the logo color change when mobile nav bar is toggled
     let logoFontColor = 'var(--Logo-Default)';
 
-    // 'IF' condition to determine when navbar on mobile is opened
-    // so it changes logo font color
+    // 'IF' condition to determine when navbar on mobile is opened so it changes logo font color
     if (!navbar) {
             logoFontColor = 'var(--Logo-Default)';
     } else {
@@ -25,17 +24,6 @@ export default function Header() {
     const handleMobileNav = () => {
         setNavbar(!navbar);
     }
-
-    /* !!!!! 
-     TASKS TO COMPLETE:
-        1) CREATE NEXT COMPONENT AND IMPLEMENT SLIDERS/CAROUSEL FEATURES
-        2) ADJUST TO BE RESPONSIVE IN DIFFERENT RESOLUTIONS
-        3) CHECK IF THE CAROUSEL/SLIDER WORKS PROPERLY
-
-     * YOU ARE AMAZING! AND YOU WILL FINISH THIS WEBSITE AND BECOME AN AMAZING DEVELOPER
-     * TRUST IN YOURSELF! YOU CAN DO IT!!!
-     !!!!!
-    */
 
     return (
         <header className={navbar ? "bg-mobile-menu" : ""}>
