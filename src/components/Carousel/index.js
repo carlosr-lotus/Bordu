@@ -1,18 +1,50 @@
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { useState } from 'react';
+
 import carouselData from './carouselData';
 
 import './carousel.css';
-import { useState } from 'react';
 
 export default function Carousel() {
 
-    const [carousel] = useState(carouselData);
+    // index = data array address (0, 1, 2...)
+    const [index, setIndex] = useState(0);
+    const { title1, title2, image } = carouselData[index];
+
+    // Check if index number is bigger than the array length or less than 0
+    const checkIndexNum = (number) => {
+        if (number > carouselData.length - 1) {
+            return 0;
+        }
+
+        if (number < 0) {
+            return carouselData.length - 1;
+        }
+
+        return number;
+    };
+
+    // Function that changes current slide to the next one
+    const nextSlide = () => {
+        setIndex((index) => {
+            let newIndex = index + 1;
+            return checkIndexNum(newIndex);
+        })
+    };
+
+    // Function that changes current slide to the previous one
+    const prevSlide = () => {
+        setIndex((index) => {
+            let newIndex = index - 1;
+            return checkIndexNum(newIndex);
+        })
+    }
 
     /* !!!!! 
      TASKS TO COMPLETE:
         1) CREATE NEXT COMPONENT AND IMPLEMENT SLIDERS/CAROUSEL FEATURES
             1.1) Carousel Container (Text + Buttons + Img) = COMPLETED!!
-            1.2) Implement Carousel Features (prev/next functional buttons) = PENDING...
+            1.2) Implement Carousel Features (prev/next functional buttons) = COMPLETED!
         2) ADJUST TO BE RESPONSIVE IN DIFFERENT RESOLUTIONS
         3) CHECK IF THE CAROUSEL/SLIDER WORKS PROPERLY
 
@@ -24,23 +56,24 @@ export default function Carousel() {
     return (
         <div className="carousel-global-container">
 
-            {carousel.map((item) => (
-                <div className="carousel-local-container" key={item.id}>
+            <div className="carousel-local-container">
                     
-                    <div className="carousel-content-container">
-                        <h1>{item.title1}</h1>
-                        <h2>{item.title2}</h2>
+                <div className="carousel-content-container">
+                    <h1>{title1}</h1>
+                    <h2>{title2}</h2>
 
-                        <div className="carousel-btns">
-                            <button><FaArrowCircleLeft size={30} fill="var(--Logo-Font-White)" /></button>
-                            <button><FaArrowCircleRight size={30} fill="var(--Logo-Font-White)"/></button>
-                        </div>
+                    <div className="carousel-btns">
+                        <button onClick={ prevSlide }>
+                            <FaArrowCircleLeft size={30} fill="var(--Logo-Font-White)" />
+                        </button>
+                        <button onClick={ nextSlide }>
+                            <FaArrowCircleRight size={30} fill="var(--Logo-Font-White)"/>
+                            </button>
                     </div>
-
-                    <img src={item.image} alt="carousel-img"/>
                 </div>
-                ))}
 
+                <img src={image} alt="carousel-img"/>
+            </div>
         </div>
     )
 }
