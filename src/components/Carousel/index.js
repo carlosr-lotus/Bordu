@@ -45,8 +45,8 @@ export default function Carousel() {
         1) CREATE NEXT COMPONENT AND IMPLEMENT SLIDERS/CAROUSEL FEATURES
             1.1) Carousel Container (Text + Buttons + Img) = COMPLETED!!
             1.2) Implement Carousel Features (prev/next functional buttons) = COMPLETED!
-        2) ADJUST TO BE RESPONSIVE IN DIFFERENT RESOLUTIONS
-        3) CHECK IF THE CAROUSEL/SLIDER WORKS PROPERLY
+        2) ADJUST TO BE RESPONSIVE IN DIFFERENT RESOLUTIONS = COMPLETED!
+        3) CHECK IF THE CAROUSEL/SLIDER WORKS PROPERLY = COMPLETED!
 
      * YOU ARE AMAZING! AND YOU WILL FINISH THIS WEBSITE AND BECOME AN AMAZING DEVELOPER
      * TRUST IN YOURSELF! YOU CAN DO IT!!!
@@ -63,11 +63,11 @@ export default function Carousel() {
                     <h2>{title2}</h2>
 
                     <div className="carousel-btns">
-                        <button onClick={ prevSlide }>
+                        <button onClick={ prevSlide } >
                             <FaArrowCircleLeft size={30} fill="var(--Logo-Font-White)" />
                         </button>
                         <button onClick={ nextSlide }>
-                            <FaArrowCircleRight size={30} fill="var(--Logo-Font-White)"/>
+                            <FaArrowCircleRight size={30} fill="var(--Logo-Font-White)" />
                             </button>
                     </div>
                 </div>
