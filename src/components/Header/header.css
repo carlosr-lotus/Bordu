@@ -1,6 +1,5 @@
 header {
     width: 100%;
-    transition: background-color 250ms linear;
 }
 
 /* CSS Class only when Mobile Menu is toggled */
