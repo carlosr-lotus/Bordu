@@ -40,12 +40,21 @@ h2 {
     justify-content: space-between;
 }
 
-.carousel-btns button {
+.carousel-btns .prev-btn,
+.carousel-btns .next-btn {
     background: transparent;
-    border: transparent;
+    border-color: transparent;
+    color: var(--Logo-Font-White);
 
+    transition: .3s;
     cursor: pointer;
 }
+
+.carousel-btns .prev-btn:hover,
+.carousel-btns .next-btn:hover {
+    color: var(--Main-Red);
+}
+
 
 /* Carousel Image */
 .carousel-local-container {
@@ -94,9 +103,5 @@ h2 {
 
     .carousel-content-container h2 {
         font-size: 2.6rem;
-    }
-
-    .carousel-btns button:hover {
-        fill: red;
     }
 }

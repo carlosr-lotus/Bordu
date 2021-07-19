@@ -63,12 +63,12 @@ export default function Carousel() {
                     <h2>{title2}</h2>
 
                     <div className="carousel-btns">
-                        <button onClick={ prevSlide } >
-                            <FaArrowCircleLeft size={30} fill="var(--Logo-Font-White)" />
+                        <button className="prev-btn" onClick={ prevSlide } >
+                            <FaArrowCircleLeft size={30} />
                         </button>
-                        <button onClick={ nextSlide }>
-                            <FaArrowCircleRight size={30} fill="var(--Logo-Font-White)" />
-                            </button>
+                        <button className="next-btn" onClick={ nextSlide }>
+                            <FaArrowCircleRight size={30} />
+                        </button>
                     </div>
                 </div>
 
