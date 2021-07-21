@@ -32,3 +32,13 @@ body {
     font-family: 'Poppins',
         sans-serif;
 }
+
+/* Global CSS for Button tag */
+.red-button {
+    background-color: var(--Main-Red);
+    color: var(--Logo-Font-White);
+    border: none;
+
+    /* display: flex;
+    align-items: center; */
+}
