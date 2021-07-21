@@ -40,19 +40,6 @@ export default function Carousel() {
         })
     }
 
-    /* !!!!! 
-     TASKS TO COMPLETE:
-        1) CREATE NEXT COMPONENT AND IMPLEMENT SLIDERS/CAROUSEL FEATURES
-            1.1) Carousel Container (Text + Buttons + Img) = COMPLETED!!
-            1.2) Implement Carousel Features (prev/next functional buttons) = COMPLETED!
-        2) ADJUST TO BE RESPONSIVE IN DIFFERENT RESOLUTIONS = COMPLETED!
-        3) CHECK IF THE CAROUSEL/SLIDER WORKS PROPERLY = COMPLETED!
-
-     * YOU ARE AMAZING! AND YOU WILL FINISH THIS WEBSITE AND BECOME AN AMAZING DEVELOPER
-     * TRUST IN YOURSELF! YOU CAN DO IT!!!
-     !!!!!
-    */
-
     return (
         <div className="carousel-global-container">
 
