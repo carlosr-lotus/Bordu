@@ -1,10 +1,15 @@
+/* Global Component Container */
+/* It will englobe all content inside */
 .OurProducts-container {
     margin: 10rem 0;
     text-align: center;
 }
 
 .OurProducts-container>h1 {
+    margin-bottom: 5rem;
+
     color: var(--Main-Black);
+
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: .1rem;
@@ -12,19 +17,79 @@
 
 /* Local 'Our Products' container */
 .OurProducts-local-container {
+    width: 85%;
+    height: 100%;
+    margin: 5rem auto 0;
 
-    width: 100%;
-    height: 100px;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .OurProducts-img-container {
-    width: 80%;
-    height: 250px;
+    position: relative;
+
+    margin: 0 auto 5.2rem;
+    width: 90%;
+    height: 25rem;
+
 }
 
 .OurProducts-img-container img {
     border-radius: 25px;
     object-fit: cover;
-    width: 80%;
+    width: 100%;
     height: 100%;
+
+    box-shadow: 1px 1px 7px black;
+}
+
+/* *** Red Ball inside the images *** */
+.red-ball {
+    position: absolute;
+    bottom: -25px;
+    right: -15px;
+
+    width: 7rem;
+    height: 7rem;
+
+    border-radius: 60px;
+
+    background-color: red;
+    box-shadow: 1px 1px 4px black;
+}
+
+/* *** Box Content with Text and Red Button *** */
+.OurProducts-box-content {
+    display: grid;
+    justify-items: start;
+
+    width: 90%;
+    margin: 0 auto;
+
+    color: var(--Main-Black);
+
+    text-align: left;
+}
+
+.OurProducts-box-content h2 {
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+.OurProducts-box-content>p {
+    width: 23.5rem;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+
+    margin: 1.4rem 0;
+}
+
+.OurProducts-box-content .red-button {
+    text-align: right;
+}
+
+/* CSS to turn 'OurProducts-box-content' to the right according to the design provided */
+.justify-right {
+    justify-items: end;
+    text-align: right;
 }
