@@ -5,7 +5,7 @@ header {
 
 /* CSS Class only when Mobile Menu is toggled */
 .bg-mobile-menu {
-    position: absolute;
+    position: fixed;
     z-index: 10;
 
     height: 100vh;
@@ -113,6 +113,10 @@ header {
 
 /* For Desktop */
 @media (min-width: 1440px) and (max-width: 2560px) {
+    header {
+        margin-bottom: 5rem;
+    }
+
     .nav-toggle {
         display: none;
     }
