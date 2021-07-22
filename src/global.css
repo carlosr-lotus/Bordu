@@ -35,10 +35,37 @@ body {
 
 /* Global CSS for Button tag */
 .red-button {
+    font-family: 'Poppins',
+        sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 100;
+
+    padding: 1rem;
+    width: 15.2rem;
+
     background-color: var(--Main-Red);
     color: var(--Logo-Font-White);
-    border: none;
 
-    /* display: flex;
-    align-items: center; */
+    border: none;
+    border-radius: 25px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: .5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-button>p {
+    margin: 0 0 0 .5rem;
+    font-size: 1.6rem;
+}
+
+.red-button:hover {
+    transform: scale(1.1);
 }
