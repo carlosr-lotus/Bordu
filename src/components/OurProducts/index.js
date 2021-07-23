@@ -16,49 +16,51 @@ import './OurProducts.css';
 
 export default function OurProducts() {
 
+    const sectionBox = OurProductsData;
 
     return (
         <div className="OurProducts-container">
             <h1>Nossos Produtos</h1>
 
-            {/* This div will contain details imported from 'OurProductsData' */}
+            {sectionBox.map((box) => (
+
+                // This div will contain the content imported from 'OurProductsData.js'
+                <div className={box.id % 2 !== 0 ? "OurProducts-local-container" : "OurProducts-local-container flex-right" } key={box.id}>
+
+                    <div className="OurProducts-img-container">
+                        <img src={box.img} alt={box.alt} />
+                        <div className={box.id % 2 !== 0 ? "red-ball" : "red-ball ball-left"}></div>
+                    </div>
+
+                    <div className={box.id % 2 !== 0 ? "OurProducts-box-content" : "OurProducts-box-content justify-right"}>
+                        <h2>{box.title}</h2>
+                        <p>{box.text}</p>
+
+                        <button className="red-button">
+                            <FaShoppingBag />
+                            <p>Comprar</p>
+                        </button>
+                    </div>
+
+                </div>
+            ))}
+
             <div className="OurProducts-local-container">
 
                 <div className="OurProducts-img-container">
-                    <img src={require("../../images/our-products-1.jpg").default} alt="makeup" />
+                    <img src={require("../../images/our-products-3.jpeg").default} alt="makeup" />
                     <div className="red-ball"></div>
                 </div>
 
                 <div className="OurProducts-box-content">
-                    <h2>Maquiagem</h2>
-                    <p>Nós trabalhamos duro para oferecer aos nossos clientes a experiência de uma beleza única e memorável. Seja belo(a) com produtos totalmente orgânicos!</p>
+                    <h2>Presente!</h2>
+                    <p>Na sua primeira compra, você irá receber um brinde nosso! É a nossa forma de dizer "Bem vindo(a)!". Esperamos que faça bom uso!
+                    </p>
 
-                    <button className="red-button">
-                        <FaShoppingBag />
-                        <p>Comprar</p>
-                    </button>
                 </div>
 
             </div>
-
-            {/* This div will contain details imported from 'OurProductsData' */}
-            <div className="OurProducts-local-container">
-
-                <div className="OurProducts-img-container">
-                    <img src={require("../../images/our-products-2.jpeg").default} alt="makeup" />
-                </div>
-
-                <div className="OurProducts-box-content justify-right">
-                    <h2>Fragrâncias</h2>
-                    <p>Tem algo mais charmoso ao sentir o gostoso cheiro de um perfume? Seria melhor ainda vindo de nós. Temos diversos perfumes perfeitos para qualquer ocasião.</p>
-
-                    <button className="red-button">
-                        <FaShoppingBag />
-                        <p>Comprar</p>
-                    </button>
-                </div>
-
-            </div>
+             
         </div>
     )
 };

@@ -19,7 +19,7 @@
 .OurProducts-local-container {
     width: 85%;
     height: 100%;
-    margin: 5rem auto 0;
+    margin: 7rem auto 0;
 
     /* display: flex;
     flex-direction: column; */
@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
 
-    box-shadow: 1px 1px 7px black;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 /* *** Red Ball inside the images *** */
@@ -55,7 +55,13 @@
     border-radius: 60px;
 
     background-color: red;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 7px black;
+}
+
+/* *** Red Ball to the left */
+.ball-left {
+    bottom: -25px;
+    left: -15px;
 }
 
 /* *** Box Content with Text and Red Button *** */
@@ -77,7 +83,7 @@
 }
 
 .OurProducts-box-content>p {
-    width: 23.5rem;
+    width: 25rem;
     font-size: 1.4rem;
     line-height: 2.3rem;
 
@@ -92,4 +98,38 @@
 .justify-right {
     justify-items: end;
     text-align: right;
+}
+
+/* Desktop Monitors monitors */
+@media (min-width: 1440px) and (max-width: 2560px) {
+
+    .OurProducts-container>h1 {
+        font-size: 4rem;
+    }
+
+    .OurProducts-local-container {
+        width: 60%;
+        margin: 12rem auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .OurProducts-img-container {
+        position: relative;
+
+        margin: 0 auto 0;
+        width: 32rem;
+        height: 24.5rem;
+    }
+
+    .flex-right {
+        flex-direction: row;
+    }
+
+    .OurProducts-box-content h2 {
+        font-size: 2.6rem;
+    }
 }
