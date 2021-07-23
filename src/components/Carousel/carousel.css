@@ -89,7 +89,7 @@
     }
 }
 
-/* Desktop Monitors monitors */
+/* Desktop Monitors */
 @media (min-width: 1440px) and (max-width: 2560px) {
     .carousel-local-container {
         width: 80%;
