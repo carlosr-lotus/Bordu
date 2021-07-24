@@ -4,14 +4,6 @@ import OurProductsData from './OurProductsData';
 
 import './OurProducts.css';
 
-    /* !!!!! 
-     TASKS TO COMPLETE:
-
-     * YOU ARE AMAZING! AND YOU WILL FINISH THIS WEBSITE AND BECOME AN AMAZING DEVELOPER
-     * TRUST IN YOURSELF! YOU CAN DO IT!!!
-     !!!!!
-    */
-
 export default function OurProducts() {
 
     const sectionBox = OurProductsData;
