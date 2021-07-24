@@ -6,7 +6,6 @@ import './OurProducts.css';
 
     /* !!!!! 
      TASKS TO COMPLETE:
-        1) FIX MOBILE NAV BAR TO WORK PROPERLY WITH USECONTEXT() = COMPLETED with adding position: fixed in the mobile menu bar
         2) ADJUST TO BE RESPONSIVE IN DIFFERENT RESOLUTIONS = COMPLETED
         3) CREATE 'OURPRODUCTS' SECTION AND MAKE IT RESPONSIVE ACCORDING TO THE DESIGN PROVIDED = PENDING...
      * YOU ARE AMAZING! AND YOU WILL FINISH THIS WEBSITE AND BECOME AN AMAZING DEVELOPER
@@ -27,7 +26,9 @@ export default function OurProducts() {
                 // This div will contain the content imported from 'OurProductsData.js'
                 <div className={box.id % 2 !== 0 ? "OurProducts-local-container" : "OurProducts-local-container flex-right" } key={box.id}>
 
-                    <div className="OurProducts-img-container">
+                    <div className={box.id % 2 !== 0 ? 
+                    "OurProducts-img-container" :
+                    "OurProducts-img-container justify-tablet"}>
                         <img src={box.img} alt={box.alt} />
                         <div className={box.id % 2 !== 0 ? "red-ball" : "red-ball ball-left"}></div>
                     </div>
@@ -60,7 +61,7 @@ export default function OurProducts() {
                 </div>
 
             </div>
-             
+
         </div>
     )
 };
