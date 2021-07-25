@@ -1,0 +1,46 @@
+.author-container {
+    margin: 25rem 0;
+    text-align: center;
+
+}
+
+.author-container p,
+.author-container h1 {
+    color: var(--Main-Black);
+}
+
+.author-container p {
+    font-size: 2rem;
+}
+
+.author-container h1 {
+    margin-top: 1.2rem;
+    font-family: 'Great Vibes',
+        cursive;
+    font-size: 5rem;
+}
+
+.author-social-media {
+    margin: 1.8rem auto;
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.author-social-media button {
+    background: transparent;
+    border: transparent;
+
+    cursor: pointer;
+}
+
+.author-social-media a {
+    color: #000;
+}
+
+.author-social-media .github-icon:hover,
+.author-social-media .linkedin-icon:hover {
+    color: red;
+}
