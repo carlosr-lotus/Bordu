@@ -89,6 +89,23 @@
     }
 }
 
+/* Laptops/Small laptops common screen size */
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .carousel-local-container {
+        width: 80%;
+        height: 52rem;
+    }
+
+    .carousel-content-container h1,
+    h2 {
+        font-size: 4rem;
+    }
+
+    .carousel-content-container h2 {
+        font-size: 2.4rem;
+    }
+}
+
 /* Desktop Monitors */
 @media (min-width: 1440px) and (max-width: 2560px) {
     .carousel-local-container {
