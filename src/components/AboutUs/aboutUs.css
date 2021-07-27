@@ -1,0 +1,196 @@
+/* *** Global CSS - Component *** */
+.aboutUs-global-container {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    width: 100%;
+    color: var(--Main-Black);
+}
+
+.aboutUs-global-container h1,
+.aboutUs-global-container h2,
+.aboutUs-text-container strong {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+/* Component Image Container 'Scientific Research' */
+.aboutUs-img-container {
+    width: 77%;
+    height: 137px;
+    margin: 5rem auto;
+}
+
+.aboutUs-img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 26px;
+
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+}
+
+/* Component Text Container 'Nossas origens' */
+.aboutUs-text-container {
+    width: 80%;
+    height: 60rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 26px;
+
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+}
+
+.aboutUs-text-container>h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.aboutUs-text-container p {
+    width: 80%;
+    font-size: 1.4rem;
+}
+
+.aboutUs-text-container strong {
+    font-size: 1.4rem;
+}
+
+/* iPads/Tablets */
+@media (min-width: 701px) and (max-width: 1366px) {
+    .aboutUs-img-container {
+        width: 30rem;
+        height: 20rem;
+        margin: 5rem auto;
+    }
+
+    .aboutUs-text-container {
+        width: 30rem;
+        height: 60rem;
+        margin: 0 auto;
+    }
+}
+
+/* iPads/Tablets */
+@media (min-width: 701px) and (max-width: 1366px) and (orientation : landscape) {
+    .aboutUs-global-container {
+        width: 80%;
+        margin: 15rem auto;
+    }
+
+    .aboutUs-global-container h1 {
+        font-size: 3rem;
+    }
+
+    .aboutUs-img-container {
+        width: 35rem;
+        height: 25rem;
+        margin: 5rem auto;
+    }
+
+    .aboutUs-text-container {
+        width: 35rem;
+        height: 60rem;
+        margin: 0 auto;
+    }
+
+    .aboutUs-text-container p {
+        font-size: 1.5rem;
+    }
+
+    .aboutUs-text-container strong {
+        font-size: 1.5rem;
+    }
+}
+
+/* ***** Laptops/Small laptops common screen size ***** */
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .aboutUs-global-container {
+        width: 80%;
+        margin: 15rem auto;
+    }
+
+    .aboutUs-global-container h1 {
+        font-size: 4rem;
+    }
+
+    .aboutUs-local-container {
+        margin-top: 8rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .aboutUs-img-container {
+        width: 50rem;
+        height: 32rem;
+        margin: 5rem auto;
+    }
+
+    .aboutUs-text-container {
+        width: 35rem;
+        height: 60rem;
+        margin: 0 auto;
+    }
+
+    .aboutUs-text-container p {
+        font-size: 1.5rem;
+    }
+
+    .aboutUs-text-container strong {
+        font-size: 1.5rem;
+    }
+}
+
+/* ***** Desktop Monitors monitors ***** */
+@media (min-width: 1440px) and (max-width: 2560px) {
+
+    .aboutUs-global-container {
+        width: 120rem;
+        margin: 15rem auto;
+    }
+
+    .aboutUs-global-container h1 {
+        font-size: 4rem;
+    }
+
+    .aboutUs-local-container {
+        margin-top: 8rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .aboutUs-img-container {
+        width: 63rem;
+        height: 32rem;
+        margin: 5rem auto;
+    }
+
+    .aboutUs-text-container {
+        width: 35rem;
+        height: 60rem;
+        margin: 0 auto;
+    }
+
+    .aboutUs-text-container>h2 {
+        text-align: center;
+        font-size: 2.4rem;
+    }
+
+    .aboutUs-text-container p {
+        font-size: 1.5rem;
+    }
+
+    .aboutUs-text-container strong {
+        font-size: 1.5rem;
+    }
+}
