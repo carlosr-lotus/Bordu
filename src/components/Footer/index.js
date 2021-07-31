@@ -1,12 +1,10 @@
-import { AiOutlineInstagram } from 'react-icons/ai';
-import { AiFillFacebook, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai';
-import { MdMailOutline } from 'react-icons/md';
-import { MdClose } from 'react-icons/md';
+import { AiFillFacebook, AiFillYoutube, AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai';
+import { MdClose, MdMailOutline } from 'react-icons/md';
 import { FaPhoneAlt, FaLinkedin } from 'react-icons/fa';
 
 import { useState } from 'react';
 
-import FooterModal from './ModalFooter';
+import './Footer.css';
 
 // BEGIN BUILDING MODAL FOOTER //
 /* !!!!! 
@@ -22,18 +20,27 @@ import FooterModal from './ModalFooter';
      !!!!!
     */
 
-import './Footer.css'
-
 export default function Footer() {
 
     const [newsletterSuccess, setNewsletterSuccess] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [indexModal, setIndexModal] = useState();
 
-    let choosenModal = "";
+    // Variable that will receive the modal content according to the selected option
+    let choosenModal;
 
-    // Function to open modal comparing the passed parameters
+    // Function to open Modal
+    const openModal = (id) => {
+        setIsModalOpen(true);
+        setIndexModal(id);
+    }
+    
+    // Function to close Modal
+    const closeModal = () => {
+        setIsModalOpen(false);
+    }
 
+    // Variable (line 30) gets content
     if (indexModal === 0) {
          choosenModal = <div className="footer-modal-content">
             <button className="close-modal-btn" onClick={() => closeModal()}>
@@ -73,25 +80,13 @@ export default function Footer() {
                     </div>
                 </div>;
     }
-                
-    // Function to open Modal
-    const openModal = (id) => {
-        setIsModalOpen(true);
-        setIndexModal(id);
-    }
-    
-    // Function to close Modal
-    const closeModal = () => {
-        setIsModalOpen(false);
-        console.log(isModalOpen);
-    }
 
     return (
         <footer>
             <nav className="footer-links">
-                <p onClick={() => openModal(0)}>Newsletter</p>
-                <p onClick={() => openModal(1)}>Contatos</p>
-                <p>Carreiras</p>
+                <li onClick={() => openModal(0)}>Newsletter</li>
+                <li onClick={() => openModal(1)}>Contatos</li>
+                <li>Carreiras</li>
             </nav>
 
             <div className="social-media-container">

@@ -19,11 +19,12 @@ footer {
     justify-content: space-between;
 }
 
-.footer-links p {
+.footer-links li {
+    list-style: none;
     cursor: pointer;
 }
 
-.footer-links p:hover {
+.footer-links li:hover {
     color: var(--Main-Red);
 }
 
