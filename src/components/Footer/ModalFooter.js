@@ -1,9 +1,11 @@
-import './Footer.css';
+// import { useState } from 'react';
 
-export default function FooterModal() {
-    return (
-        <>
-            <h2>Working!</h2>
-        </>
-    )
-}
+
+// import './Footer.css';
+
+// export default function FooterModal(choosenModal2, isModalOpen, setIsModalOpen) {
+
+//     return (
+        
+//     )
+// }
