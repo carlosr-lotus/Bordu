@@ -42,5 +42,5 @@
 
 .author-social-media .github-icon:hover,
 .author-social-media .linkedin-icon:hover {
-    color: red;
+    color: var(--Main-Red);
 }
