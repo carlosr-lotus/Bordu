@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { BiMenu, BiCart } from 'react-icons/bi';
 import { MdClose } from 'react-icons/md';
@@ -44,8 +45,9 @@ export default function Header() {
                     <nav className="logo-container">
                         <button className="btn-header-link">Fragrância</button>
                         
-                        {/* Logo 'Bordu' */}
-                        <svg className="header-logo" width="90" height="90" viewBox="0 0 3334 2500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" xmlnsserif="http://www.serif.com/" fillRule="evenodd" clipRule="evenodd" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="1.5">
+                        {/* Logo 'Bordu' + Link to index/homepage */}
+                        <Link to="/">
+                         <svg className="header-logo" width="90" height="90" viewBox="0 0 3334 2500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" xmlnsserif="http://www.serif.com/" fillRule="evenodd" clipRule="evenodd" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="1.5">
                             <title>Website Logo "Bordu"</title>
                             <desc>The logo is "Bordu" which is the name of the brand, plus a mouth with red lipstick above it.</desc>
                             {/* Red Lips + Stroke */}
@@ -60,7 +62,8 @@ export default function Header() {
                             <g><path d="M1069.4,1220.31c166.688,-0 302.017,135.329 302.017,302.017c0,166.687 -135.329,302.017 -302.017,302.017c-166.688,-0 -302.017,-135.33 -302.017,-302.017c-0,-166.688 135.329,-302.017 302.017,-302.017Zm2.215,69.376c128.823,0 233.411,104.588 233.411,233.411c-0,128.823 -104.588,233.411 -233.411,233.411c-128.823,-0 -233.411,-104.588 -233.411,-233.411c0,-128.823 104.588,-233.411 233.411,-233.411Z" fill={logoFontColor}/></g>
                             {/* Letter 'B' */}
                             <g><path d="M192.552,1029.65l153.292,-0c0,-0 102.607,-2.171 155.453,28.505c52.847,30.675 79.159,77.557 89.685,119.415c10.526,41.858 -0.198,77.754 -0.801,86.869c-0.604,9.116 -23.621,82.913 -94.227,118.679c0,-0 69.995,24.878 92.555,48.112c22.559,23.233 44.684,40.858 62.811,98.976c18.127,58.119 -2.594,123.201 -8.404,136.259c-5.81,13.058 -50.235,120.715 -192.077,138.131c-0,-0 -24.312,2.8 -55.242,2.526l-203.045,-0.016l0,-777.456Zm76.251,405.58c0,-0 159.647,-2.799 185.507,10.39c0,-0 119.526,21.741 123.521,140.779c0,0 2.365,112.867 -116.713,139.237c0,-0 -47.501,9.917 -113.633,8.004l-78.682,-0.595l0,-297.815Zm0.037,-329.435l94.633,-0.115c-0,-0 61.212,0.79 89.255,15.739c28.044,14.949 48.82,28.886 60.117,76.379c-0,0 12.193,60.739 -23.692,98.609c-0,0 -34.39,49.993 -104.303,54.606c0,0 -40.442,4.94 -62.956,3.587l-53.091,-0l0.037,-248.805Z" fill={logoFontColor}/></g></g></g>
-                    </svg>
+                            </svg>
+                        </Link>
                     
                         <button className="btn-header-link">Maquiagem</button>
                     </nav>

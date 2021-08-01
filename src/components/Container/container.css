@@ -6,13 +6,20 @@
 }
 
 /* iPads/Tablets */
-@media (min-width: 701px) and (max-width: 1366px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     #container {
-        max-width: 1366px;
+        max-width: 1024px;
     }
 }
 
 /* Laptops/Small laptops common screen size */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    #container {
+        max-width: 1336px;
+    }
+}
+
+/* Large Screensize Laptops */
 @media (min-width: 1366px) and (max-width: 1440px) {
     #container {
         max-width: 1440px;

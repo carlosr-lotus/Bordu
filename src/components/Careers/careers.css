@@ -1,0 +1,192 @@
+.careers-global-container {
+    text-align: center;
+
+    color: var(--Main-Black);
+}
+
+.careers-global-container>h1 {
+    margin-bottom: 5rem;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+/* *** CareerS OptionS *** */
+.careers-options {
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.careers-options li {
+    list-style: none;
+}
+
+/* *** Career Option *** */
+.career-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.career-option li {
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* *** Red Underline *** */
+.red-underline {
+    width: 6rem;
+    height: .2rem;
+    background-color: red;
+}
+
+/* ***** CSS for Career Info ***** */
+.career-info-container {
+    width: 85%;
+    height: 46rem;
+    margin: 0 auto 7rem;
+    margin-top: 5rem;
+
+    font-weight: 100;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* *** Career Title *** */
+.career-title h1,
+.career-title h2,
+.career-title h3 {
+    font-weight: 100;
+    text-align: left;
+}
+
+.career-title h3 {
+    font-size: 1.4rem;
+    margin: .5rem 0;
+}
+
+.career-income-container h2 {
+    text-align: center;
+    width: 17.2rem;
+    padding: .2rem .3rem;
+    border-radius: .5rem;
+    background-color: var(--Career-Income);
+}
+
+/* *** Career Info *** */
+.career-toDos p {
+    margin: 1.2rem 0;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+/* *** Mandatory Skills for career opportunity *** */
+/* *** + Plus contact to get the job *** */
+.mandatory-skills p {
+    margin: 1.2rem 0;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.mandatory-skills span {
+    font-weight: 600;
+}
+
+/* ***** RESPONSIVE CSS ***** */
+@media (max-width: 768px) and (orientation: landscape) {
+    .career-info-container {
+        height: 42rem;
+        width: 75%;
+    }
+}
+
+/* iPads/Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .careers-options {
+        height: 18rem;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .career-option li {
+        font-size: 1.6rem;
+    }
+
+    .career-info-container {
+        height: 35rem;
+        width: 75%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .careers-options {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .career-info-container {
+        height: 35rem;
+        width: 75%;
+    }
+}
+
+/* Large Screensize Laptops */
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .careers-options {
+        width: 120rem;
+        margin: 0 auto;
+    }
+
+    .careers-options {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .career-option li {
+        font-size: 2rem;
+    }
+
+    .career-info-container {
+        height: 35rem;
+        width: 70%;
+    }
+}
+
+/* Desktop Monitors monitors */
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .careers-options {
+        width: 120rem;
+        margin: 0 auto;
+    }
+
+    .career-option li {
+        font-size: 2rem;
+    }
+
+    .careers-options {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .career-info-container {
+        height: 38rem;
+        width: 65%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .careers-options {
+        width: 120rem;
+        margin: 0 auto;
+    }
+
+    .career-info-container {
+        height: 38rem;
+        width: 55%;
+    }
+}

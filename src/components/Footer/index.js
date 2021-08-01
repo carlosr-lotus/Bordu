@@ -3,6 +3,7 @@ import { MdClose, MdMailOutline } from 'react-icons/md';
 import { FaPhoneAlt, FaLinkedin } from 'react-icons/fa';
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Footer.css';
 
@@ -86,7 +87,7 @@ export default function Footer() {
             <nav className="footer-links">
                 <li onClick={() => openModal(0)}>Newsletter</li>
                 <li onClick={() => openModal(1)}>Contatos</li>
-                <li>Carreiras</li>
+                <Link to="/careers" className="careers-link"><li>Carreiras</li></Link>
             </nav>
 
             <div className="social-media-container">

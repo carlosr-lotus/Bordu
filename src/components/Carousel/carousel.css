@@ -61,7 +61,7 @@
     position: relative;
 
     width: 100%;
-    height: 262px;
+    height: 300px;
 
     margin: 0 auto;
 }
@@ -73,14 +73,13 @@
 }
 
 /* iPads/Tablets */
-@media (min-width: 701px) and (max-width: 1366px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .carousel-local-container {
         width: 90%;
         height: 35rem;
     }
 
-    .carousel-content-container h1,
-    h2 {
+    .carousel-content-container h1 {
         font-size: 3.2rem;
     }
 
@@ -90,14 +89,30 @@
 }
 
 /* Laptops/Small laptops common screen size */
-@media (min-width: 1366px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1366px) {
     .carousel-local-container {
         width: 80%;
-        height: 52rem;
+        height: 38rem;
     }
 
     .carousel-content-container h1,
-    h2 {
+    .carousel-conent-container h2 {
+        font-size: 4rem;
+    }
+
+    .carousel-content-container h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .carousel-local-container {
+        width: 80%;
+        height: 38rem;
+    }
+
+    .carousel-content-container h1,
+    .carousel-content-container h2 {
         font-size: 4rem;
     }
 
@@ -114,7 +129,7 @@
     }
 
     .carousel-content-container h1,
-    h2 {
+    .carousel-content-container h2 {
         font-size: 4.5rem;
     }
 

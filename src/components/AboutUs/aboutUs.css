@@ -16,7 +16,7 @@
 
 /* Component Image Container 'Scientific Research' */
 .aboutUs-img-container {
-    width: 77%;
+    width: 28rem;
     height: 137px;
     margin: 5rem auto;
 }
@@ -34,7 +34,7 @@
 
 /* Component Text Container 'Nossas origens' */
 .aboutUs-text-container {
-    width: 80%;
+    width: 30rem;
     height: 60rem;
     margin: 0 auto;
 
@@ -64,8 +64,7 @@
     font-size: 1.4rem;
 }
 
-/* iPads/Tablets */
-@media (min-width: 701px) and (max-width: 1366px) {
+@media (max-width: 768px) and (orientation: landscape) {
     .aboutUs-img-container {
         width: 30rem;
         height: 20rem;
@@ -80,7 +79,22 @@
 }
 
 /* iPads/Tablets */
-@media (min-width: 701px) and (max-width: 1366px) and (orientation : landscape) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .aboutUs-img-container {
+        width: 30rem;
+        height: 20rem;
+        margin: 5rem auto;
+    }
+
+    .aboutUs-text-container {
+        width: 30rem;
+        height: 60rem;
+        margin: 0 auto;
+    }
+}
+
+/* iPads/Tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation : landscape) {
     .aboutUs-global-container {
         width: 80%;
         margin: 15rem auto;
@@ -112,7 +126,7 @@
 }
 
 /* ***** Laptops/Small laptops common screen size ***** */
-@media (min-width: 1366px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1366px) {
     .aboutUs-global-container {
         width: 80%;
         margin: 15rem auto;
@@ -124,14 +138,11 @@
 
     .aboutUs-local-container {
         margin-top: 8rem;
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
     }
 
     .aboutUs-img-container {
-        width: 50rem;
-        height: 32rem;
+        width: 40rem;
+        height: 25rem;
         margin: 5rem auto;
     }
 
@@ -151,8 +162,51 @@
 }
 
 /* ***** Desktop Monitors monitors ***** */
-@media (min-width: 1440px) and (max-width: 2560px) {
+@media (min-width: 1366px) and (max-width: 1440px) {
 
+    .aboutUs-global-container {
+        width: 120rem;
+        margin: 15rem auto;
+    }
+
+    .aboutUs-global-container h1 {
+        font-size: 4rem;
+    }
+
+    .aboutUs-local-container {
+        margin-top: 8rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .aboutUs-img-container {
+        width: 63rem;
+        height: 32rem;
+        margin: 5rem auto;
+    }
+
+    .aboutUs-text-container {
+        width: 35rem;
+        height: 60rem;
+        margin: 0 auto;
+    }
+
+    .aboutUs-text-container>h2 {
+        text-align: center;
+        font-size: 2.4rem;
+    }
+
+    .aboutUs-text-container p {
+        font-size: 1.5rem;
+    }
+
+    .aboutUs-text-container strong {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
     .aboutUs-global-container {
         width: 120rem;
         margin: 15rem auto;
