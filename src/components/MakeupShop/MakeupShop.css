@@ -1,0 +1,264 @@
+.makeupShop-global-container {
+    color: var(--Main-Black);
+}
+
+/* *** Page presentation *** */
+/* "Maquiagem" + Image */
+.makeupShop-presentation {
+    margin-bottom: 15rem;
+    width: 100%;
+    height: 25rem;
+
+    text-align: center;
+}
+
+.makeupShop-presentation h1 {
+    margin-bottom: 2rem;
+
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+.makeupShop-presentation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 100%;
+}
+
+.linha-bronze {
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.4rem;
+}
+
+/* *** Display products (prices, photos, etc) *** */
+/* "Linha Bronze" de Maquiagem */
+.product-box-container h2 {
+    font-size: 2.4rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 8rem auto;
+}
+
+.product-box img {
+    object-fit: cover;
+    width: 85%;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+}
+
+.product-details {
+    width: 85%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.product-details h3,
+.product-details h4 {
+    font-weight: 100;
+}
+
+.product-details h3 {
+    margin-top: 1rem;
+}
+
+.product-details h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.more-products-text {
+    width: 25rem;
+    margin: 25rem auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.2rem;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+    .makeupShop-presentation h1,
+    .linha-bronze,
+    .more-products-text {
+        font-size: 3rem;
+    }
+
+    .product-box img {
+        width: 60%;
+    }
+
+    .product-details {
+        width: 60%;
+    }
+}
+
+/* iPads/Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .makeupShop-presentation h1,
+    .linha-bronze,
+    .more-products-text {
+        font-size: 3rem;
+    }
+
+    .makeupShop-presentation {
+        margin: 0 auto 15rem;
+        width: 90%;
+    }
+
+    .product-box img {
+        width: 60%;
+    }
+
+    .product-details {
+        width: 60%;
+    }
+
+    .more-products-text {
+        width: 30rem;
+    }
+}
+
+/* Laptops/Small laptops common screen size */
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+
+    .product-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .makeupShop-presentation h1,
+    .linha-bronze,
+    .more-products-text {
+        font-size: 3rem;
+    }
+
+    .makeupShop-presentation {
+        margin: 0 auto 15rem;
+        width: 90%;
+    }
+
+    .product-box img {
+        width: 50rem;
+        height: 50rem;
+    }
+
+    .product-details {
+        width: 50rem;
+    }
+
+    .more-products-text {
+        width: 30rem;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .makeupShop-presentation {
+        margin: 0 auto 15rem;
+        width: 90%;
+        height: 45rem;
+    }
+
+    .makeupShop-presentation h1,
+    .linha-bronze,
+    .more-products-text {
+        font-size: 3rem;
+    }
+
+    .product-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .product-box img {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .product-details {
+        width: 45rem;
+    }
+
+    .more-products-text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .makeupShop-presentation {
+        margin: 0 auto 15rem;
+        width: 90%;
+        height: 45rem;
+    }
+
+    .makeupShop-presentation h1,
+    .linha-bronze,
+    .more-products-text {
+        font-size: 3rem;
+    }
+
+    .product-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .product-box img {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .product-details {
+        width: 40rem;
+    }
+
+    .more-products-text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .makeupShop-presentation {
+        margin: 0 auto 15rem;
+        width: 70%;
+        height: 45rem;
+    }
+
+    .product-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 70%;
+        margin: 0 auto;
+    }
+}
