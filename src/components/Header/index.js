@@ -65,7 +65,9 @@ export default function Header() {
                             </svg>
                         </Link>
                     
-                        <button className="btn-header-link">Maquiagem</button>
+                        <Link to="/makeup" className="link-makeup-page">
+                         <button className="btn-header-link">Maquiagem</button>
+                        </Link>
                     </nav>
 
                     {/* Cart + Favorites(heart icon) */}
@@ -84,8 +86,12 @@ export default function Header() {
 
                 {/* If Mobile Menu Icon is Toggled, display the Mobile Nav below */}
                 {navbar ? <nav className="mobile-navbar">
-                    <button className="btn-header-link">Fragrância</button>
-                    <button className="btn-header-link">Maquiagem</button>
+                    
+                    <button className="btn-header-link" >Fragrância</button>
+
+                    <Link to="/makeup" className="makeup-link">
+                        <button className="btn-header-link" onClick={() => setNavbar(!navbar)}>Maquiagem</button>
+                    </Link>
                 </nav>
                     : ""}
 
