@@ -179,6 +179,7 @@
     }
 }
 
+/* 4K / Widescreen monitors */
 @media (min-width: 2560px) {
     .careers-options {
         width: 120rem;
