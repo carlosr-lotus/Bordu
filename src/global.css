@@ -71,3 +71,7 @@ body {
 .red-button:hover {
     transform: scale(1.1);
 }
+
+.link-makeup-page {
+    text-decoration: none;
+}
