@@ -43,7 +43,10 @@ export default function Header() {
 
                     {/* Logo Container + Desktop Navbar */}
                     <nav className="logo-container">
-                        <button className="btn-header-link">Fragrância</button>
+
+                        <Link to="/fragrance" className="link-fragrance-page">
+                            <button className="btn-header-link">Fragrância</button>
+                        </Link>
                         
                         {/* Logo 'Bordu' + Link to index/homepage */}
                         <Link to="/">
@@ -87,9 +90,11 @@ export default function Header() {
                 {/* If Mobile Menu Icon is Toggled, display the Mobile Nav below */}
                 {navbar ? <nav className="mobile-navbar">
                     
-                    <button className="btn-header-link" >Fragrância</button>
+                    <Link to="/fragrance" className="link-fragrance-page">
+                        <button className="btn-header-link" onClick={() => setNavbar(!navbar)} >Fragrância</button>
+                    </Link>
 
-                    <Link to="/makeup" className="makeup-link">
+                    <Link to="/makeup" className="link-makeup-page">
                         <button className="btn-header-link" onClick={() => setNavbar(!navbar)}>Maquiagem</button>
                     </Link>
                 </nav>
