@@ -34,14 +34,14 @@
 
 /* *** Display products (prices, photos, etc) *** */
 /* "Linha Bronze" de Maquiagem */
-.product-box-container h2 {
+.makeup-product-box-container h2 {
     font-size: 2.4rem;
     font-weight: 100;
     text-align: center;
     margin-bottom: 4rem;
 }
 
-.product-box {
+.makeup-product-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +49,7 @@
     margin: 8rem auto;
 }
 
-.product-box img {
+.makeup-product-box img {
     object-fit: cover;
     width: 85%;
 
@@ -58,24 +58,30 @@
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
     -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
     -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+
+    transition: .3s;
 }
 
-.product-details {
+.makeup-product-box img:hover {
+    filter: brightness(.9);
+}
+
+.makeup-product-details {
     width: 85%;
     text-align: left;
     font-size: 1.5rem;
 }
 
-.product-details h3,
-.product-details h4 {
+.makeup-product-details h3,
+.makeup-product-details h4 {
     font-weight: 100;
 }
 
-.product-details h3 {
+.makeup-product-details h3 {
     margin-top: 1rem;
 }
 
-.product-details h4 {
+.makeup-product-details h4 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
@@ -96,11 +102,11 @@
         font-size: 3rem;
     }
 
-    .product-box img {
+    .makeup-product-box img {
         width: 60%;
     }
 
-    .product-details {
+    .makeup-product-details {
         width: 60%;
     }
 }
@@ -119,11 +125,12 @@
         width: 90%;
     }
 
-    .product-box img {
+    .makeup-product-box img {
         width: 60%;
+        height: 45rem;
     }
 
-    .product-details {
+    .makeup-product-details {
         width: 60%;
     }
 
@@ -157,12 +164,12 @@
         width: 90%;
     }
 
-    .product-box img {
+    .makeup-product-box img {
         width: 50rem;
         height: 50rem;
     }
 
-    .product-details {
+    .makeup-product-details {
         width: 50rem;
     }
 
@@ -184,7 +191,7 @@
         font-size: 3rem;
     }
 
-    .product-box-container {
+    .makeup-product-box-container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -194,12 +201,12 @@
         margin: 0 auto;
     }
 
-    .product-box img {
+    .makeup-product-box img {
         width: 45rem;
         height: 45rem;
     }
 
-    .product-details {
+    .makeup-product-details {
         width: 45rem;
     }
 
@@ -212,7 +219,7 @@
     .makeupShop-presentation {
         margin: 0 auto 15rem;
         width: 90%;
-        height: 45rem;
+        height: 50rem;
     }
 
     .makeupShop-presentation h1,
@@ -221,7 +228,7 @@
         font-size: 3rem;
     }
 
-    .product-box-container {
+    .makeup-product-box-container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -231,12 +238,12 @@
         margin: 0 auto;
     }
 
-    .product-box img {
+    .makeup-product-box img {
         width: 40rem;
         height: 40rem;
     }
 
-    .product-details {
+    .makeup-product-details {
         width: 40rem;
     }
 
@@ -252,7 +259,7 @@
         height: 45rem;
     }
 
-    .product-box-container {
+    .makeup-product-box-container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;

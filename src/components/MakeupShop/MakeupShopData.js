@@ -1,3 +1,6 @@
+// This object will be accessible in the following components:
+// "MakeupShop/index.js" and "MakeupShop/MakeupProduct/index.js"
+
 const makeupShopData = [
     {
         id: 1,
