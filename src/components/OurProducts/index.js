@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FaShoppingBag } from 'react-icons/fa';
 
 import OurProductsData from './OurProductsData';
@@ -30,10 +31,12 @@ export default function OurProducts() {
                             <h2>{title}</h2>
                             <p>{text}</p>
 
-                            <button className="red-button">
-                                <FaShoppingBag />
-                                <p>Comprar</p>
-                            </button>
+                            <Link to={id === 1 ? "/makeup" : "/fragrance"} className="link-makeup-page">
+                                <button className="red-button">
+                                    <FaShoppingBag />
+                                    <p>Comprar</p>
+                                </button>
+                            </Link>
                         </div>
 
                     </div>
@@ -51,7 +54,6 @@ export default function OurProducts() {
                     <h2>Presente!</h2>
                     <p>Na sua primeira compra, você irá receber um brinde nosso! É a nossa forma de dizer "Bem vindo(a)!". Esperamos que faça bom uso!
                     </p>
-
                 </div>
 
             </div>
