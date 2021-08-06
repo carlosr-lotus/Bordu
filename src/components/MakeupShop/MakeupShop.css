@@ -126,12 +126,12 @@
     }
 
     .makeup-product-box img {
-        width: 60%;
+        width: 45rem;
         height: 45rem;
     }
 
     .makeup-product-details {
-        width: 60%;
+        width: 45rem;
     }
 
     .more-products-text {
@@ -141,7 +141,6 @@
 
 /* Laptops/Small laptops common screen size */
 @media (min-width: 1024px) and (max-width: 1366px) {
-
 
     .product-box-container {
         display: flex;
