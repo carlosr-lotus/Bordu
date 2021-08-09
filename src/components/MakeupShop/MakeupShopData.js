@@ -8,7 +8,19 @@ const makeupShopData = [
         title: "Batom Bordu - Linha Bronze",
         price:  "79,00",
         reviewCount: 2,
-        desc: "Inspirado na cor do fruto morango, buscamos trazer além da beleza e fluidez labial, conforto e brilho à sua imagem com duração fixa de 12 horas e lábios hidratados por 24 horas."
+        desc: "Inspirado na cor do fruto morango, buscamos trazer além da beleza e fluidez labial, conforto e brilho à sua imagem com duração fixa de 12 horas e lábios hidratados por 24 horas.",
+        reviews: [{
+            id: 1,
+            person: "Ana Carolina",
+            city: "São Paulo, SP",
+            review: "Estou apaixonada pela maciez e cor desse batom! Amo seu design rosa!"
+        }, 
+        {
+            id: 2,
+            person: "Helena Santiago",
+            city: "Rio Grande do Sul, RS",
+            review: "Aquele batom para arrasar no look!"
+        }]
     },
     {
         id: 2,

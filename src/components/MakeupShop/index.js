@@ -16,7 +16,6 @@ export default function MakeupShop() {
     const handleClick = (product) => {
         dispatch({type : "SELECT_PRODUCT", payload : product});
         history.push("/makeup/product");
-        // localStorage
         localStorage.setItem("product", JSON.stringify(product));
     }
 
