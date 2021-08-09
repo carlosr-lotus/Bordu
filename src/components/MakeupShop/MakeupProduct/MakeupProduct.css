@@ -1,3 +1,7 @@
+.product-details-container {
+    margin: 0 auto 12rem;
+}
+
 .product-details-img,
 .product-details-text {
     width: 85%;
@@ -72,10 +76,6 @@
         margin: 0 auto;
     }
 
-    h2 {
-        color: hotpink;
-    }
-
     .product-details-text {
         width: 45rem;
     }
@@ -83,6 +83,10 @@
 
 /* iPads/Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .product-details-container {
+        margin: 0 auto 12rem;
+    }
+
     .product-details-img {
         width: 45rem;
         height: 45rem;
@@ -97,6 +101,10 @@
 
 /* Laptops/Small laptops common screen size */
 @media (min-width: 1024px) and (max-width: 1366px) {
+    .product-details-container {
+        margin: 0 auto 12rem;
+    }
+
     .product-details-img {
         width: 50rem;
         height: 50rem;
@@ -111,7 +119,7 @@
 @media (min-width: 1366px) and (max-width: 1440px) {
     .product-details-container {
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 12rem;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -145,7 +153,7 @@
 @media (min-width: 1440px) and (max-width: 2560px) {
     .product-details-container {
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 12rem;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
