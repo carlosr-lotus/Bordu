@@ -19,6 +19,9 @@
     /* Career Salary Background Color */
     --Career-Income: #D3DFF0;
 
+    /* ***** Neutral Colors ***** */
+    --Upperline-Review: rgba(112, 112, 112, 0.6);
+
     /* 1rem = 10px */
     font-size: 62.5%;
 }
