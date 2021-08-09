@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { BiMenu, BiCart } from 'react-icons/bi';
 import { MdClose } from 'react-icons/md';
-import { FiHeart } from 'react-icons/fi';
 
 import './header.css';
 
@@ -76,10 +75,6 @@ export default function Header() {
                     {/* Cart + Favorites(heart icon) */}
                     {/* navbar ? "englober-header disabled" : "englober-header" */}
                     <div className={navbar ? "icons-header disabled" : "icons-header"}>
-                        <button>
-                            <FiHeart size={20} />
-                        </button>
-
                         <button>
                             <BiCart size={25} />
                         </button>
