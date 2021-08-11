@@ -1,13 +1,13 @@
 import MakeupProduct from "../../../components/MakeupShop/MakeupProduct";
 import MakeupProductReviews from "../../../components/MakeupShop/MakeupProduct/MakeupProductReviews";
+import Footer from "../../../components/Footer";
 
 import { useSelector } from "react-redux";
-
 
 export default function MakeupProductPage() {
 
     const reducer = useSelector(state => state.productPage);
-    console.log(reducer.reviews);
+    console.log(reducer);
 
     return (
         <>
@@ -16,6 +16,7 @@ export default function MakeupProductPage() {
 
             {/* Call component and pass the object containing the reviews that is inside the product object */}
             <MakeupProductReviews data={reducer.reviews}/>
+            <Footer />
         </>
     )
 };
