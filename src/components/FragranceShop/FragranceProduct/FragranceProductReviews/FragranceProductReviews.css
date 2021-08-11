@@ -1,0 +1,182 @@
+.fragrance-Product-Reviews-global-container {
+    margin-bottom: 25rem;
+}
+
+.fragrance-Product-Reviews-global-container>h1 {
+    width: 25rem;
+    margin: 0 auto 5rem;
+
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.2rem;
+
+    color: var(--Main-Black);
+}
+
+.user-review-container {
+    width: 100%;
+    margin-bottom: 4.5rem;
+}
+
+.upperline {
+    width: 85%;
+    height: .1rem;
+
+    margin: 0 auto 2rem;
+
+    background-color: var(--Upperline-Review);
+    filter: contrast(.5);
+}
+
+.user-info-content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.user-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info h2 {
+    font-weight: 100;
+}
+
+.user-info span,
+.user-info p {
+    font-size: 1.4rem;
+}
+
+.user-phrase-content {
+    width: 85%;
+    margin: .5rem auto 0;
+}
+
+.user-phrase-content>p {
+    font-size: 1.4rem;
+
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .fragrance-Product-Reviews-global-container>h1 {
+        width: 100%;
+    }
+
+    .user-info-content {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+/* iPads/Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .fragrance-Product-Reviews-global-container>h1 {
+        width: 100%;
+        font-size: 2.4rem;
+    }
+
+    .user-info {
+        width: 35rem;
+    }
+
+    .user-review-container {
+        width: 70%;
+        margin: 0 auto 5rem;
+    }
+
+    .user-info-content {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .user-info-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Laptops/Small laptops common screen size */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .fragrance-Product-Reviews-global-container>h1 {
+        width: 100%;
+        font-size: 2.8rem;
+    }
+
+    .user-info-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .user-info {
+        width: 38rem;
+    }
+
+    .user-review-container {
+        width: 60%;
+        margin: 0 auto 6rem;
+    }
+}
+
+/* Large Screensize Laptops */
+@media (min-width: 1366px) and (max-width: 1440px) {
+
+    .fragrance-Product-Reviews-global-container>h1 {
+        width: 100%;
+        font-size: 2.8rem;
+    }
+
+    .user-info-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .user-info {
+        width: 40rem;
+    }
+
+    .user-review-container {
+        width: 60%;
+        margin: 0 auto 6rem;
+    }
+
+    .user-phrase-content>p {
+        font-size: 1.4rem;
+    }
+}
+
+/* Desktop Monitors monitors */
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .fragrance-Product-Reviews-global-container>h1 {
+        width: 100%;
+        font-size: 2.8rem;
+    }
+
+    .user-info-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .user-info {
+        width: 40rem;
+    }
+
+    .user-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .user-review-container {
+        width: 90rem;
+        margin: 0 auto 6rem;
+    }
+
+    .user-phrase-content>p {
+        font-size: 1.4rem;
+    }
+}

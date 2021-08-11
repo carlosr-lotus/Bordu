@@ -1,3 +1,5 @@
+import { useHistory } from 'react-router';
+import { useDispatch } from 'react-redux';
 import { FaShoppingBag } from 'react-icons/fa';
 
 import fragranceShopData from './FragranceShopData';
@@ -6,7 +8,16 @@ import './FragranceShop.css';
 
 export default function FragranceShop() {
 
+    const dispatch = useDispatch();
+    const history = useHistory();
+
     const fragranceData = fragranceShopData;
+
+    const handleClick = (product) => {
+        dispatch({type: "SELECT_PRODUCT", payload: product});
+        history.push("/fragrance/product");
+        localStorage.setItem("product", JSON.stringify(product));
+    }
 
     return (
         <div className="fragranceShop-global-container">
@@ -35,10 +46,12 @@ export default function FragranceShop() {
                                 <h3>{title}</h3>
                                 <h4>R$ {price}</h4>
 
-                                <button className="red-button">
-                                    <FaShoppingBag />
-                                    <p>Comprar</p>
-                                </button>
+                                <div className="link-page-underline-none">
+                                    <button className="red-button" onClick={() => handleClick(data)}>
+                                        <FaShoppingBag />
+                                        <p>Comprar</p>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     )
