@@ -7,20 +7,6 @@ import { Link } from 'react-router-dom';
 
 import './Footer.css';
 
-// BEGIN BUILDING MODAL FOOTER //
-/* !!!!! 
-     TASKS TO COMPLETE:
-
-        1) Create 'Modal' component
-            1.1) Learn and use GetContext
-            1.2) Make it appear when specific button is clicked, example : "Newsletter" will open the modal with the newsletter related content
-        2) Make it responsive across all devices
-
-     * YOU ARE AMAZING! AND YOU WILL FINISH THIS WEBSITE AND BECOME AN AMAZING DEVELOPER
-     * TRUST IN YOURSELF! YOU CAN DO IT!!!
-     !!!!!
-    */
-
 export default function Footer() {
 
     const [newsletterSuccess, setNewsletterSuccess] = useState(false);
