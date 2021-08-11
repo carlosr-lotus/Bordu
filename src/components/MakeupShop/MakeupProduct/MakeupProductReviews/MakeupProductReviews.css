@@ -1,3 +1,7 @@
+.makeup-Product-Reviews-global-container {
+    margin-bottom: 25rem;
+}
+
 .makeup-Product-Reviews-global-container>h1 {
     width: 25rem;
     margin: 0 auto 5rem;
@@ -11,7 +15,7 @@
 
 .user-review-container {
     width: 100%;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4.5rem;
 }
 
 .upperline {
@@ -51,7 +55,8 @@
 }
 
 .user-phrase-content>p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+
     margin-bottom: .5rem;
 }
 
@@ -96,6 +101,11 @@
 
 /* Laptops/Small laptops common screen size */
 @media (min-width: 1024px) and (max-width: 1366px) {
+    .makeup-Product-Reviews-global-container>h1 {
+        width: 100%;
+        font-size: 2.8rem;
+    }
+
     .user-info-content {
         display: flex;
         align-items: center;
@@ -108,7 +118,7 @@
 
     .user-review-container {
         width: 60%;
-        margin: 0 auto 5rem;
+        margin: 0 auto 6rem;
     }
 }
 
@@ -126,12 +136,12 @@
 
     .makeup-Product-Reviews-global-container>h1 {
         width: 100%;
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
     .user-review-container {
         width: 60%;
-        margin: 0 auto 5rem;
+        margin: 0 auto 6rem;
     }
 
     .user-phrase-content>p {
@@ -143,7 +153,7 @@
 @media (min-width: 1440px) and (max-width: 2560px) {
     .makeup-Product-Reviews-global-container>h1 {
         width: 100%;
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
     .user-info-content {
@@ -156,9 +166,13 @@
         width: 40rem;
     }
 
+    .user-info h2 {
+        font-size: 1.6rem;
+    }
+
     .user-review-container {
         width: 90rem;
-        margin: 0 auto 5rem;
+        margin: 0 auto 6rem;
     }
 
     .user-phrase-content>p {

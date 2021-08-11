@@ -13,6 +13,7 @@ export default function MakeupShop() {
 
     const makeupData = makeupShopData;
 
+    // Give reducer the data from the specific product choosen by the user
     const handleClick = (product) => {
         dispatch({type : "SELECT_PRODUCT", payload : product});
         history.push("/makeup/product");
