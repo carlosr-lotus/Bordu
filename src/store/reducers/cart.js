@@ -6,7 +6,7 @@ export default function cart(state = INITIAL_STATE, action) {
         case 'ADD-CART':
             return [...state, action.payload];
         case 'REMOVE-CART':
-            return state;
+            return state.filter(item => item.id !== action.payload.id)
         default:
             return state;
     }
