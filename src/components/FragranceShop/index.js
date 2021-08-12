@@ -44,7 +44,7 @@ export default function FragranceShop() {
 
                             <div className="fragrance-product-details">
                                 <h3>{title}</h3>
-                                <h4>R$ {price}</h4>
+                                <h4>R$ {price.toFixed(2).replace(".", ",")}</h4>
 
                                 <div className="link-page-underline-none">
                                     <button className="red-button fragranceShop-btn" onClick={() => handleClick(data)}>
