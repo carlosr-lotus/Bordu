@@ -43,11 +43,9 @@ body {
     font-family: 'Poppins',
         sans-serif;
     letter-spacing: 1px;
-    font-size: 1.8rem;
     font-weight: 100;
 
     padding: 1rem;
-    width: 15.2rem;
 
     background-color: var(--Main-Red);
     color: var(--Logo-Font-White);
@@ -68,7 +66,6 @@ body {
 
 .red-button>p {
     margin: 0 0 0 .5rem;
-    font-size: 1.6rem;
 }
 
 .red-button:hover {
