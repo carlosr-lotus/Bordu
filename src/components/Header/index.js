@@ -72,12 +72,14 @@ export default function Header() {
                         </Link>
                     </nav>
 
-                    {/* Cart + Favorites(heart icon) */}
+                    {/* Cart Icon */}
                     {/* navbar ? "englober-header disabled" : "englober-header" */}
                     <div className={navbar ? "icons-header disabled" : "icons-header"}>
-                        <button>
-                            <BiCart size={25} />
-                        </button>
+                        <Link to="/cart">
+                            <button>
+                                <BiCart size={25} />
+                            </button>
+                        </Link>
                     </div>
 
                 </div>
