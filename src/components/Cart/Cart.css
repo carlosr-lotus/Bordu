@@ -1,0 +1,180 @@
+.cart-global-container {
+    position: relative;
+    width: 90%;
+
+    margin: 0 auto 5rem;
+}
+
+.cart-local-container {
+    position: relative;
+    margin-bottom: 5rem;
+    border: 1px solid black;
+}
+
+.delete-cart {
+    position: absolute;
+
+    top: 38px;
+    right: 25px;
+
+    cursor: pointer;
+}
+
+/* *** Product details such as name and image *** */
+.cart-product-details {
+    padding: 2rem;
+}
+
+.cart-product-details h1,
+.cart-product-details h2 {
+    font-weight: 100;
+    margin: 1rem 0;
+    color: var(--Main-Black);
+}
+
+
+.cart-product-details h2 {
+    font-size: 2rem;
+}
+
+.cart-product-details img {
+    max-width: 15rem;
+    max-height: 15rem;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.30);
+}
+
+.cart-product-details h1 {
+    font-size: 1.5rem;
+}
+
+/* *** Product details such as price, shipping *** */
+.cart-price-details {
+    height: 24rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: var(--Main-Black);
+}
+
+.cart-price-details h2 {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.cart-price-details strong {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.shipping-container label {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.shipping-container input {
+    height: 3rem;
+    width: 50%;
+}
+
+/* Shipping "Confirmar Frete" button */
+.shipping-btn {
+    height: 3rem;
+    margin-top: 1.5rem;
+}
+
+.shipping-btn>p {
+    font-size: 1.2rem;
+}
+
+.price-shipping {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--Main-Red);
+}
+
+.disabled-shipping {
+    display: none;
+}
+
+/* *** Final Price *** */
+.cart-final-price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-final-price {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    color: var(--Main-Black);
+}
+
+.buy-btn {
+    width: 23rem;
+}
+
+.buy-btn>p {
+    font-size: 1.4rem;
+}
+
+/* iPads/Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cart-local-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Laptops/Small laptops common screen size */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .cart-local-container {
+        width: 80%;
+        margin: 0 auto 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Large Screensize Laptops */
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .cart-local-container {
+        width: 90rem;
+        margin: 0 auto 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Desktop Monitors monitors */
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .cart-local-container {
+        width: 90rem;
+        margin: 0 auto 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 2560px) {
+    .cart-local-container {
+        width: 90rem;
+        margin: 0 auto 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
