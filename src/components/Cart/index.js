@@ -1,12 +1,22 @@
 import { MdAttachMoney } from 'react-icons/md';
 import { FaTrashAlt } from 'react-icons/fa';
-import './Cart.css';
 import { useState } from 'react';
 
-export default function Cart() {
+import './Cart.css';
+
+export default function Cart(props) {
     
+    // Get props data containing the selected product data
+    let productData = props.data;
+
+    // Final price to pay
     let finalPrice = 0.00;
-    finalPrice += 50.91;
+    // if (props) {
+    //     finalPrice += 
+    // }
+
+    console.log("Props passed to Cart component:");
+    console.log(productData);
 
     // =-=-=-=-=-=-=-=-=-==-=-=-=-=--=-=-=-=-=-=-=
     // To Do:
@@ -22,34 +32,36 @@ export default function Cart() {
     return (
         <div className="cart-global-container">
 
-            <div className="cart-local-container">
-                <FaTrashAlt className="delete-cart" size={15}/>
+            {productData.map((data) => (
+                <div className="cart-local-container" key={data.id}>
+                    <FaTrashAlt className="delete-cart" size={15}/>
 
-                <div className="cart-product-details">
-                    <h2>Item</h2>
-                    <img src={require("../../images/base-bordu.png").default} alt="card-pro"/>
-                    <h1>Base Bordu - Linha Bronze</h1>
-                </div>
-
-                <div className="cart-price-details">
-                    <div className="cart-product-price">
-                        <h2>Preço</h2>
-                        <strong>R$ 99,00</strong>
+                    <div className="cart-product-details">
+                        <h2>Item</h2>
+                        <img src={data.img} alt="card-product"/>
+                        <h1>{data.title}</h1>
                     </div>
 
-                    {/* Shipping Tax Input */}
-                    <div className="shipping-container">
-                        <label htmlFor="shipping">Frete:</label>
-                        <input type="text" id="shipping" name="shipping" placeholder="20209-383" required />
+                    <div className="cart-price-details">
+                        <div className="cart-product-price">
+                            <h2>Preço</h2>
+                            <strong>R$ {data.price}</strong>
+                        </div>
 
-                        <button className="red-button shipping-btn" onClick={() => setShippingTax(true)}>
-                            <p>Confirmar Frete</p>
-                        </button>
+                        {/* Shipping Tax Input */}
+                        <div className="shipping-container">
+                            <label htmlFor="shipping">Frete:</label>
+                            <input type="text" id="shipping" name="shipping" placeholder="20209-383" required />
 
-                        {shippingTax ? <p className="price-shipping">Taxa entrega: R$ 9,99</p> : null}
+                            <button className="red-button shipping-btn" onClick={() => setShippingTax(true)}>
+                                <p>Confirmar Frete</p>
+                            </button>
+
+                            {shippingTax ? <p className="price-shipping">Taxa entrega: R$ 9,99</p> : null}
+                        </div>
                     </div>
                 </div>
-            </div>
+            ))}
           
             {/* Final Price */}
             <div className="cart-final-price-container">
