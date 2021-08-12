@@ -47,7 +47,7 @@ export default function FragranceShop() {
                                 <h4>R$ {price}</h4>
 
                                 <div className="link-page-underline-none">
-                                    <button className="red-button" onClick={() => handleClick(data)}>
+                                    <button className="red-button fragranceShop-btn" onClick={() => handleClick(data)}>
                                         <FaShoppingBag />
                                         <p>Comprar</p>
                                     </button>

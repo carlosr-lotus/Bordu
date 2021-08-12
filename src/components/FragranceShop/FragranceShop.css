@@ -94,6 +94,14 @@
     font-size: 2.2rem;
 }
 
+.fragranceShop-btn {
+    width: 15.2rem;
+}
+
+.fragranceShop-btn>p {
+    font-size: 1.5rem;
+}
+
 @media (max-width: 768px) and (orientation: landscape) {
 
     .fragranceShop-presentation h1,

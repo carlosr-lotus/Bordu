@@ -68,6 +68,15 @@
     font-size: 1.4rem;
 }
 
+.fragranceProduct-btn {
+    width: 15.2rem;
+}
+
+.fragranceProduct-btn>p {
+    font-size: 1.5rem;
+}
+
+
 @media (max-width: 768px) and (orientation: landscape) {
     .product-details-img {
         width: 45rem;

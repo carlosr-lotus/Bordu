@@ -4,7 +4,6 @@ import './FragranceProductReviews.css';
 export default function FragranceProductReviews(props) {
 
     const reviewsArray = props.data;
-    console.log(reviewsArray);
 
     return (
         <div className="fragrance-Product-Reviews-global-container">
