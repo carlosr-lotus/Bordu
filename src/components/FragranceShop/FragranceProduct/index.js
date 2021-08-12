@@ -10,26 +10,12 @@ export default function FragranceProduct(props) {
     const dispatch = useDispatch();
     const history = useHistory();
 
-    let productData = props.data;
+    const productData = props.data;
 
     const handleClick = (product) => {
         dispatch({type: "ADD-CART", payload: product});
         history.push("/cart");
     }
-
-    // Get price from object ( string )
-    // console.log(typeof props.data.price);
-    // Convert it to float
-    // let floatValue = parseFloat(props.data.price);
-    // console.log(typeof floatValue);
-    // console.log(floatValue);
-    // floatValue += 9.99;
-    // console.log(floatValue);
-    // floatValue = floatValue.toFixed(2).replace(".", ",");
-    // console.log(typeof floatValue);
-    // console.log(floatValue);
-    // Sum 10
-    // Return as a string again
 
     return (
         <div className="product-details-container">
@@ -56,7 +42,7 @@ export default function FragranceProduct(props) {
                 </div>
 
                 <div className="price-related-container">
-                    <h2>R$ {productData.price}</h2>
+                    <h2>R$ {productData.price.toFixed(2).replace(".", ",")}</h2>
                     <button className="red-button fragranceProduct-btn" onClick={() => handleClick(productData)}>
                         <FaShoppingBag />
                         <p>Comprar</p>
