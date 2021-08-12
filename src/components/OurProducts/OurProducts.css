@@ -90,6 +90,14 @@
     text-align: right;
 }
 
+.ourproducts-btn {
+    width: 15.2rem;
+}
+
+.ourproducts-btn>p {
+    font-size: 1.5rem;
+}
+
 /* CSS to turn 'OurProducts-box-content' to the right according to the design provided on MOBILE */
 .justify-right {
     justify-items: end;

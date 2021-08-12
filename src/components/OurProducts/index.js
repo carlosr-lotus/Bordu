@@ -32,7 +32,7 @@ export default function OurProducts() {
                             <p>{text}</p>
 
                             <Link to={id === 1 ? "/makeup" : "/fragrance"} className="link-makeup-page">
-                                <button className="red-button">
+                                <button className="red-button ourproducts-btn">
                                     <FaShoppingBag />
                                     <p>Comprar</p>
                                 </button>
