@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Bordu/static/css/main.de2fd5dc.chunk.css",
+    "main.js": "/Bordu/static/js/main.977e5fea.chunk.js",
+    "main.js.map": "/Bordu/static/js/main.977e5fea.chunk.js.map",
+    "runtime-main.js": "/Bordu/static/js/runtime-main.e839c0fc.js",
+    "runtime-main.js.map": "/Bordu/static/js/runtime-main.e839c0fc.js.map",
+    "static/js/2.edf96c9f.chunk.js": "/Bordu/static/js/2.edf96c9f.chunk.js",
+    "static/js/2.edf96c9f.chunk.js.map": "/Bordu/static/js/2.edf96c9f.chunk.js.map",
+    "static/js/3.c980c2f9.chunk.js": "/Bordu/static/js/3.c980c2f9.chunk.js",
+    "static/js/3.c980c2f9.chunk.js.map": "/Bordu/static/js/3.c980c2f9.chunk.js.map",
+    "index.html": "/Bordu/index.html",
+    "static/css/main.de2fd5dc.chunk.css.map": "/Bordu/static/css/main.de2fd5dc.chunk.css.map",
+    "static/js/2.edf96c9f.chunk.js.LICENSE.txt": "/Bordu/static/js/2.edf96c9f.chunk.js.LICENSE.txt",
+    "static/media/about-us.jpeg": "/Bordu/static/media/about-us.7eef6400.jpeg",
+    "static/media/base-bordu.png": "/Bordu/static/media/base-bordu.87f51fa1.png",
+    "static/media/bordu-delineador.jpeg": "/Bordu/static/media/bordu-delineador.69c6d30d.jpeg",
+    "static/media/bordu-lingua-gato.jpeg": "/Bordu/static/media/bordu-lingua-gato.f9197c25.jpeg",
+    "static/media/bordu-parfum-1.jpeg": "/Bordu/static/media/bordu-parfum-1.7bbce94b.jpeg",
+    "static/media/bordu-parfum-2.jpeg": "/Bordu/static/media/bordu-parfum-2.5b0171e4.jpeg",
+    "static/media/bordu-parfum-3.jpeg": "/Bordu/static/media/bordu-parfum-3.df4964e6.jpeg",
+    "static/media/bordu-parfum-4.jpeg": "/Bordu/static/media/bordu-parfum-4.19142439.jpeg",
+    "static/media/lipstick-bordu.jpeg": "/Bordu/static/media/lipstick-bordu.b6951961.jpeg",
+    "static/media/makeup-page.png": "/Bordu/static/media/makeup-page.37422dfe.png",
+    "static/media/our-products-1.jpg": "/Bordu/static/media/our-products-1.30031766.jpg",
+    "static/media/our-products-2.jpeg": "/Bordu/static/media/our-products-2.5793dbfe.jpeg",
+    "static/media/our-products-3.jpeg": "/Bordu/static/media/our-products-3.0004b446.jpeg",
+    "static/media/parfum-page.jpeg": "/Bordu/static/media/parfum-page.1d521f4f.jpeg",
+    "static/media/slide-1.jpg": "/Bordu/static/media/slide-1.69efb286.jpg",
+    "static/media/slide-2.jpg": "/Bordu/static/media/slide-2.375d7def.jpg",
+    "static/media/slide-3.jpg": "/Bordu/static/media/slide-3.f971f08e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e839c0fc.js",
+    "static/js/2.edf96c9f.chunk.js",
+    "static/css/main.de2fd5dc.chunk.css",
+    "static/js/main.977e5fea.chunk.js"
+  ]
+}
