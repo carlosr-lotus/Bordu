@@ -9,6 +9,7 @@ import './Cart.css';
 export default function Cart(props) {
 
     const [shippingTax, setShippingTax] = useState(false);
+    const [checkout, setCheckout] = useState(false);
     const dispatch = useDispatch();
 
     // Get array from Reducer
@@ -67,10 +68,11 @@ export default function Cart(props) {
             {/* Final Price */}
             <div className="cart-final-price-container">
                 <strong className="cart-final-price">Total: R$ {finalPrice.toFixed(2).replace(".", ",")}</strong>
-                <button className="red-button buy-btn">
+                <button className="red-button buy-btn" onClick={() => setCheckout(true)}>
                     <MdAttachMoney size={25}/>
                     <p>Finalizar Compra</p>
                 </button>
+                {checkout ? <p className="success-buy">Pedido finalizado com sucesso!</p> : null}    
             </div>
         </div>
     )

@@ -126,10 +126,17 @@
 
 .buy-btn {
     width: 23rem;
+    margin-bottom: 2.4rem;
 }
 
 .buy-btn>p {
     font-size: 1.4rem;
+}
+
+.success-buy {
+    color: green;
+    font-size: 1.9rem;
+    text-align: center;
 }
 
 /* iPads/Tablets */
