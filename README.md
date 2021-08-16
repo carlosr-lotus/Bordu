@@ -1,5 +1,7 @@
 # Bordu
 
+Hello! :blush:
+
 This project was created for portfolio only and it offers just the front end development.
 
 Coding tools:
