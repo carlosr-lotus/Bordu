@@ -18,8 +18,6 @@ function App() {
         <Header />
 
         <Switch>
-          <Route path="/" exact component={Homepage}/>
-
           <Route path="/fragrance" exact component={FragranceShopPage} />
           <Route path="/fragrance/product" component={FragranceProductPage} />
 
@@ -29,6 +27,8 @@ function App() {
           <Route path="/cart" component={CartPage} />
 
           <Route path="/careers" component={CareerPage} />
+
+          <Route path="/" component={Homepage}/>
         </Switch>
         
       </Container>
